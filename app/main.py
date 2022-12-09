@@ -14,7 +14,7 @@ df_tv = pd.read_csv('Data/tv_shows.csv')
 #First root
 @app.get('/')
 def read_root():
-    return RedirectResponse(url='/docks/')
+    return RedirectResponse(url='/docs/')
 
 #Get max duration of a movie according to year and platform
 @app.get('/get_max_duration({year}, {platform}, {type})')
