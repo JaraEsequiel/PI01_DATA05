@@ -1,6 +1,6 @@
 # Henry PI 01 --Data Enginering--
 
-![Image](src/created-with-python.svg)     ![Image](src/created-with-docker.svg)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/created-with-python.svg)     ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/created-with-docker.svg)
 
 [![PyPI version](https://badge.fury.io/py/pandas.svg)](https://badge.fury.io/py/pandas)
 [![PyPI version](https://badge.fury.io/py/fastapi.svg)](https://badge.fury.io/py/fastapi)
@@ -42,24 +42,24 @@ I divided the exploratory analysis into two parts:
   
     Here i want to kwon about the structure of the datasets, shape, datatypes, null values, amount of rows and columns.
 
-![Image](src\Estructure_investigation.png)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/Estructure_investigation.png)
 
 * Feature Investigation:
 
   Here i take a look to the quality of the data. Duplicate valus, null values, relevances of columns, etc.
 
   Graph for see null values per column.
-  ![Image](src\feature_investigation.png)
+  ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/feature_investigation.png)
 
 # ETL
 
   During the ETL process I ran into endless errors, from null values, inconsistencies, unnecessary columns, etc. I was able to fill in empty fields using data from other datasets, review the inconsistencies and eliminate those columns that did not contribute anything to generate information.
 
-  ![Image](src/ETL.png)
+  ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/ETL.png)
 
   To finish this work i export the cleaned data to csv files, divided in movies and tv shows:
 
-  ![image](src/cleaned_data.png)
+  ![image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/cleaned_data.png)
 
 # API
 
@@ -75,22 +75,22 @@ Number of times a genre is repeated and the platform with the highest frequency.
 
 Actor who is most repeated according to platform and year.
 
-![Image](src/API.png)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/API.png)
 
 # Docker
 
 After coding the API, I need to store this and its dependencies in a container for easier deployment on any platform, so I make a docker image of my API with a Dockerfile.
 
-![Image](src/dockerfile.png)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/dockerfile.png)
 
 
-![Image](src/container.png)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/container.png)
 
 # Deployment
 
 When I finished the MVP project I implemented it in mogenius.
 
-![Image](src/mogenius.png)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/mogenius.png)
 
 # Used Technologies:
 
@@ -104,11 +104,11 @@ When I finished the MVP project I implemented it in mogenius.
 
 * Clone my repo in [[https://github.com/JaraEsequiel/PI01_DATA05]](https://github.com/JaraEsequiel/PI01_DATA05)
 
-  ![Image](src/clone_repo.png)
+  ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/clone_repo.png)
 
 * Open your terminal in  the Project folder.
 
-  ![Image](src/terminal.png)
+  ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/terminal.png)
 
 * Copy this command and press enter: ```docker build -t NameOfYourImage .``` (If you are using windows remember to open docker desktop and if you are using a Linux Distro, install docker).
 
@@ -116,11 +116,11 @@ When I finished the MVP project I implemented it in mogenius.
 
 * Write in you web browser : ```http://localhost/docs``` and you be redirected to a GUI for use the API.
 
-  ![Image](src/localhostapi.png)
+  ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/localhostapi.png)
 
 * Click in the function you want to use. For this tutorial we will use `get_count_plataform`. After this, click in try it out button, fill the box with a genre and click in execute. You have the response in response body section.
 
-  ![Image](src/response%20api.png)
+  ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/response%20api.png)
 
 ## Using Mogenius:
 
