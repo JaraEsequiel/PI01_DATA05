@@ -24,7 +24,7 @@ Hi, I want to share with you my first Data engineering project in Henry BootCamp
   * Deploy the API in Mogenius service.
 
 # Data pipeline:
-![Image](src\pipeline.png)
+![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/pipeline.png)
 
 # Datasets
 
