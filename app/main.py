@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import pandas as pd
 import numpy as np
 from collections import Counter
+from starlette.responses import RedirectResponse
 
 #Instance of FastApi
 app = FastAPI()
@@ -13,7 +14,7 @@ df_tv = pd.read_csv('Data/tv_shows.csv')
 #First root
 @app.get('/')
 def read_root():
-    return {"Welcome": "This is an API"}
+    return RedirectResponse(url='/docks/')
 
 #Get max duration of a movie according to year and platform
 @app.get('/get_max_duration({year}, {platform}, {type})')
