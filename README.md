@@ -49,6 +49,8 @@ I divided the exploratory analysis into two parts:
   Here i take a look to the quality of the data. Duplicate valus, null values, relevances of columns, etc.
 
   Graph for see null values per column.
+  
+  
   ![Image](https://github.com/JaraEsequiel/PI01_DATA05/blob/main/src/feature_investigation.png)
 
 # ETL
