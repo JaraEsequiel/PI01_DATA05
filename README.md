@@ -1,152 +1,106 @@
-<p align=center><img src=https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png><p>
+# Henry PI 01 --Data Enginering--
 
-# <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
+[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjUuOTA5OTk5OTk5OTk5OTciIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMjUuOTA5OTk5OTk5OTk5OTcgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMzEuODk5OTk5OTk5OTk5OTgiIGhlaWdodD0iMzUiIGZpbGw9IiNEQ0Q5MTYiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMjkuODk5OTk5OTk5OTk5OTgiIHk9IjAiIHdpZHRoPSI5Ni4wMDk5OTk5OTk5OTk5OSIgaGVpZ2h0PSIzNSIgZmlsbD0iIzFFODdDNiIvPjxwYXRoIGNsYXNzPSJzdmdfX3RleHQiIGQ9Ik0xMy45NSAxOC4xOUwxMy45NSAxOC4xOUwxMy45NSAxNy4zOVExMy45NSAxNi4xOSAxNC4zOCAxNS4yN1ExNC44MCAxNC4zNSAxNS42MCAxMy44NVExNi40MCAxMy4zNSAxNy40NSAxMy4zNUwxNy40NSAxMy4zNVExOC44NiAxMy4zNSAxOS43MyAxNC4xMlEyMC41OSAxNC44OSAyMC43MyAxNi4yOUwyMC43MyAxNi4yOUwxOS4yNSAxNi4yOVExOS4xNCAxNS4zNyAxOC43MSAxNC45NlExOC4yOCAxNC41NSAxNy40NSAxNC41NUwxNy40NSAxNC41NVExNi40OCAxNC41NSAxNS45NyAxNS4yNlExNS40NSAxNS45NiAxNS40NCAxNy4zM0wxNS40NCAxNy4zM0wxNS40NCAxOC4wOVExNS40NCAxOS40NyAxNS45MyAyMC4yMFExNi40MyAyMC45MiAxNy4zOCAyMC45MkwxNy4zOCAyMC45MlExOC4yNSAyMC45MiAxOC42OSAyMC41M1ExOS4xMyAyMC4xNCAxOS4yNSAxOS4yMkwxOS4yNSAxOS4yMkwyMC43MyAxOS4yMlEyMC42MCAyMC41OSAxOS43MiAyMS4zNVExOC44NCAyMi4xMiAxNy4zOCAyMi4xMkwxNy4zOCAyMi4xMlExNi4zNiAyMi4xMiAxNS41OSAyMS42M1ExNC44MSAyMS4xNSAxNC4zOSAyMC4yNlExMy45NyAxOS4zNyAxMy45NSAxOC4xOVpNMjYuNTIgMjJMMjUuMDQgMjJMMjUuMDQgMTMuNDdMMjguMDQgMTMuNDdRMjkuNTIgMTMuNDcgMzAuMzIgMTQuMTNRMzEuMTIgMTQuNzkgMzEuMTIgMTYuMDVMMzEuMTIgMTYuMDVRMzEuMTIgMTYuOTAgMzAuNzEgMTcuNDhRMzAuMzAgMTguMDYgMjkuNTYgMTguMzdMMjkuNTYgMTguMzdMMzEuNDcgMjEuOTJMMzEuNDcgMjJMMjkuODkgMjJMMjguMTcgMTguNzFMMjYuNTIgMTguNzFMMjYuNTIgMjJaTTI2LjUyIDE0LjY2TDI2LjUyIDE3LjUyTDI4LjA1IDE3LjUyUTI4LjgwIDE3LjUyIDI5LjIyIDE3LjE1UTI5LjY0IDE2Ljc3IDI5LjY0IDE2LjExTDI5LjY0IDE2LjExUTI5LjY0IDE1LjQzIDI5LjI1IDE1LjA1UTI4Ljg2IDE0LjY4IDI4LjA5IDE0LjY2TDI4LjA5IDE0LjY2TDI2LjUyIDE0LjY2Wk00MS4wOSAyMkwzNS41MiAyMkwzNS41MiAxMy40N0w0MS4wNSAxMy40N0w0MS4wNSAxNC42NkwzNy4wMCAxNC42NkwzNy4wMCAxNy4wMkw0MC41MCAxNy4wMkw0MC41MCAxOC4xOUwzNy4wMCAxOC4xOUwzNy4wMCAyMC44Mkw0MS4wOSAyMC44Mkw0MS4wOSAyMlpNNDYuMDcgMjJMNDQuNTMgMjJMNDcuNzUgMTMuNDdMNDkuMDggMTMuNDdMNTIuMzEgMjJMNTAuNzYgMjJMNTAuMDYgMjAuMDFMNDYuNzYgMjAuMDFMNDYuMDcgMjJaTTQ4LjQxIDE1LjI4TDQ3LjE4IDE4LjgyTDQ5LjY1IDE4LjgyTDQ4LjQxIDE1LjI4Wk01Ny45NSAxNC42Nkw1NS4zMSAxNC42Nkw1NS4zMSAxMy40N0w2Mi4wOCAxMy40N0w2Mi4wOCAxNC42Nkw1OS40MiAxNC42Nkw1OS40MiAyMkw1Ny45NSAyMkw1Ny45NSAxNC42NlpNNzEuNDEgMjJMNjUuODMgMjJMNjUuODMgMTMuNDdMNzEuMzcgMTMuNDdMNzEuMzcgMTQuNjZMNjcuMzEgMTQuNjZMNjcuMzEgMTcuMDJMNzAuODIgMTcuMDJMNzAuODIgMTguMTlMNjcuMzEgMTguMTlMNjcuMzEgMjAuODJMNzEuNDEgMjAuODJMNzEuNDEgMjJaTTgyLjk3IDIyTDgxLjAwIDEzLjQ3TDgyLjQ3IDEzLjQ3TDgzLjc5IDE5Ljg4TDg1LjQyIDEzLjQ3TDg2LjY2IDEzLjQ3TDg4LjI3IDE5Ljg5TDg5LjU5IDEzLjQ3TDkxLjA2IDEzLjQ3TDg5LjA5IDIyTDg3LjY3IDIyTDg2LjA1IDE1Ljc3TDg0LjM5IDIyTDgyLjk3IDIyWk05Ni42OSAyMkw5NS4yMiAyMkw5NS4yMiAxMy40N0w5Ni42OSAxMy40N0w5Ni42OSAyMlpNMTAzLjE5IDE0LjY2TDEwMC41NSAxNC42NkwxMDAuNTUgMTMuNDdMMTA3LjMyIDEzLjQ3TDEwNy4zMiAxNC42NkwxMDQuNjYgMTQuNjZMMTA0LjY2IDIyTDEwMy4xOSAyMkwxMDMuMTkgMTQuNjZaTTExMi41NiAyMkwxMTEuMDcgMjJMMTExLjA3IDEzLjQ3TDExMi41NiAxMy40N0wxMTIuNTYgMTcuMDJMMTE2LjM3IDE3LjAyTDExNi4zNyAxMy40N0wxMTcuODUgMTMuNDdMMTE3Ljg1IDIyTDExNi4zNyAyMkwxMTYuMzcgMTguMjFMMTEyLjU2IDE4LjIxTDExMi41NiAyMloiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTQ2LjQ3IDIyTDE0NC4wOSAyMkwxNDQuMDkgMTMuNjBMMTQ3LjkzIDEzLjYwUTE0OS4wNyAxMy42MCAxNDkuOTEgMTMuOThRMTUwLjc1IDE0LjM1IDE1MS4yMSAxNS4wNlExNTEuNjYgMTUuNzYgMTUxLjY2IDE2LjcxTDE1MS42NiAxNi43MVExNTEuNjYgMTcuNjYgMTUxLjIxIDE4LjM1UTE1MC43NSAxOS4wNSAxNDkuOTEgMTkuNDJRMTQ5LjA3IDE5LjgwIDE0Ny45MyAxOS44MEwxNDcuOTMgMTkuODBMMTQ2LjQ3IDE5LjgwTDE0Ni40NyAyMlpNMTQ2LjQ3IDE1LjQ3TDE0Ni40NyAxNy45M0wxNDcuNzkgMTcuOTNRMTQ4LjUyIDE3LjkzIDE0OC44OSAxNy42MVExNDkuMjYgMTcuMjkgMTQ5LjI2IDE2LjcxTDE0OS4yNiAxNi43MVExNDkuMjYgMTYuMTIgMTQ4Ljg5IDE1LjgwUTE0OC41MiAxNS40NyAxNDcuNzkgMTUuNDdMMTQ3Ljc5IDE1LjQ3TDE0Ni40NyAxNS40N1pNMTU4LjU0IDE4Ljk1TDE1NS4zNCAxMy42MEwxNTcuODUgMTMuNjBMMTU5Ljg0IDE2Ljk0TDE2MS44MyAxMy42MEwxNjQuMTMgMTMuNjBMMTYwLjkyIDE4Ljk5TDE2MC45MiAyMkwxNTguNTQgMjJMMTU4LjU0IDE4Ljk1Wk0xNzAuMDEgMTUuNDhMMTY3LjQzIDE1LjQ4TDE2Ny40MyAxMy42MEwxNzQuOTUgMTMuNjBMMTc0Ljk1IDE1LjQ4TDE3Mi4zOCAxNS40OEwxNzIuMzggMjJMMTcwLjAxIDIyTDE3MC4wMSAxNS40OFpNMTgxLjcwIDIyTDE3OS4zMiAyMkwxNzkuMzIgMTMuNjBMMTgxLjcwIDEzLjYwTDE4MS43MCAxNi43NkwxODQuOTQgMTYuNzZMMTg0Ljk0IDEzLjYwTDE4Ny4zMSAxMy42MEwxODcuMzEgMjJMMTg0Ljk0IDIyTDE4NC45NCAxOC43MkwxODEuNzAgMTguNzJMMTgxLjcwIDIyWk0xOTIuMDUgMTcuODBMMTkyLjA1IDE3LjgwUTE5Mi4wNSAxNi41NSAxOTIuNjUgMTUuNTVRMTkzLjI1IDE0LjU2IDE5NC4zMiAxNC4wMFExOTUuMzggMTMuNDMgMTk2LjcxIDEzLjQzTDE5Ni43MSAxMy40M1ExOTguMDQgMTMuNDMgMTk5LjEwIDE0LjAwUTIwMC4xNyAxNC41NiAyMDAuNzcgMTUuNTVRMjAxLjM4IDE2LjU1IDIwMS4zOCAxNy44MEwyMDEuMzggMTcuODBRMjAxLjM4IDE5LjA1IDIwMC43NyAyMC4wNFEyMDAuMTcgMjEuMDQgMTk5LjExIDIxLjYwUTE5OC4wNSAyMi4xNyAxOTYuNzEgMjIuMTdMMTk2LjcxIDIyLjE3UTE5NS4zOCAyMi4xNyAxOTQuMzIgMjEuNjBRMTkzLjI1IDIxLjA0IDE5Mi42NSAyMC4wNFExOTIuMDUgMTkuMDUgMTkyLjA1IDE3LjgwWk0xOTQuNDQgMTcuODBMMTk0LjQ0IDE3LjgwUTE5NC40NCAxOC41MSAxOTQuNzUgMTkuMDVRMTk1LjA1IDE5LjYwIDE5NS41NiAxOS45MFExOTYuMDggMjAuMjAgMTk2LjcxIDIwLjIwTDE5Ni43MSAyMC4yMFExOTcuMzUgMjAuMjAgMTk3Ljg3IDE5LjkwUTE5OC4zOCAxOS42MCAxOTguNjggMTkuMDVRMTk4Ljk4IDE4LjUxIDE5OC45OCAxNy44MEwxOTguOTggMTcuODBRMTk4Ljk4IDE3LjA5IDE5OC42OCAxNi41NFExOTguMzggMTYgMTk3Ljg3IDE1LjcwUTE5Ny4zNSAxNS40MCAxOTYuNzEgMTUuNDBMMTk2LjcxIDE1LjQwUTE5Ni4wNyAxNS40MCAxOTUuNTYgMTUuNzBRMTk1LjA1IDE2IDE5NC43NSAxNi41NFExOTQuNDQgMTcuMDkgMTk0LjQ0IDE3LjgwWk0yMDguNDQgMjJMMjA2LjExIDIyTDIwNi4xMSAxMy42MEwyMDguMDcgMTMuNjBMMjExLjc4IDE4LjA3TDIxMS43OCAxMy42MEwyMTQuMTAgMTMuNjBMMjE0LjEwIDIyTDIxMi4xNSAyMkwyMDguNDQgMTcuNTJMMjA4LjQ0IDIyWiIgZmlsbD0iI0ZGRkZGRiIgeD0iMTQyLjg5OTk5OTk5OTk5OTk4Ii8+PC9zdmc+)](https://forthebadge.com)
+[![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjcuMDY5OTk5OTk5OTk5OTYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAyMjcuMDY5OTk5OTk5OTk5OTYgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMzEuODk5OTk5OTk5OTk5OTgiIGhlaWdodD0iMzUiIGZpbGw9IiMwMDUzODQiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMjkuODk5OTk5OTk5OTk5OTgiIHk9IjAiIHdpZHRoPSI5Ny4xNjk5OTk5OTk5OTk5OSIgaGVpZ2h0PSIzNSIgZmlsbD0iI0ZGRkZGRiIvPjxwYXRoIGNsYXNzPSJzdmdfX3RleHQiIGQ9Ik0xMy45NSAxOC4xOUwxMy45NSAxOC4xOUwxMy45NSAxNy4zOVExMy45NSAxNi4xOSAxNC4zOCAxNS4yN1ExNC44MCAxNC4zNSAxNS42MCAxMy44NVExNi40MCAxMy4zNSAxNy40NSAxMy4zNUwxNy40NSAxMy4zNVExOC44NiAxMy4zNSAxOS43MyAxNC4xMlEyMC41OSAxNC44OSAyMC43MyAxNi4yOUwyMC43MyAxNi4yOUwxOS4yNSAxNi4yOVExOS4xNCAxNS4zNyAxOC43MSAxNC45NlExOC4yOCAxNC41NSAxNy40NSAxNC41NUwxNy40NSAxNC41NVExNi40OCAxNC41NSAxNS45NyAxNS4yNlExNS40NSAxNS45NiAxNS40NCAxNy4zM0wxNS40NCAxNy4zM0wxNS40NCAxOC4wOVExNS40NCAxOS40NyAxNS45MyAyMC4yMFExNi40MyAyMC45MiAxNy4zOCAyMC45MkwxNy4zOCAyMC45MlExOC4yNSAyMC45MiAxOC42OSAyMC41M1ExOS4xMyAyMC4xNCAxOS4yNSAxOS4yMkwxOS4yNSAxOS4yMkwyMC43MyAxOS4yMlEyMC42MCAyMC41OSAxOS43MiAyMS4zNVExOC44NCAyMi4xMiAxNy4zOCAyMi4xMkwxNy4zOCAyMi4xMlExNi4zNiAyMi4xMiAxNS41OSAyMS42M1ExNC44MSAyMS4xNSAxNC4zOSAyMC4yNlExMy45NyAxOS4zNyAxMy45NSAxOC4xOVpNMjYuNTIgMjJMMjUuMDQgMjJMMjUuMDQgMTMuNDdMMjguMDQgMTMuNDdRMjkuNTIgMTMuNDcgMzAuMzIgMTQuMTNRMzEuMTIgMTQuNzkgMzEuMTIgMTYuMDVMMzEuMTIgMTYuMDVRMzEuMTIgMTYuOTAgMzAuNzEgMTcuNDhRMzAuMzAgMTguMDYgMjkuNTYgMTguMzdMMjkuNTYgMTguMzdMMzEuNDcgMjEuOTJMMzEuNDcgMjJMMjkuODkgMjJMMjguMTcgMTguNzFMMjYuNTIgMTguNzFMMjYuNTIgMjJaTTI2LjUyIDE0LjY2TDI2LjUyIDE3LjUyTDI4LjA1IDE3LjUyUTI4LjgwIDE3LjUyIDI5LjIyIDE3LjE1UTI5LjY0IDE2Ljc3IDI5LjY0IDE2LjExTDI5LjY0IDE2LjExUTI5LjY0IDE1LjQzIDI5LjI1IDE1LjA1UTI4Ljg2IDE0LjY4IDI4LjA5IDE0LjY2TDI4LjA5IDE0LjY2TDI2LjUyIDE0LjY2Wk00MS4wOSAyMkwzNS41MiAyMkwzNS41MiAxMy40N0w0MS4wNSAxMy40N0w0MS4wNSAxNC42NkwzNy4wMCAxNC42NkwzNy4wMCAxNy4wMkw0MC41MCAxNy4wMkw0MC41MCAxOC4xOUwzNy4wMCAxOC4xOUwzNy4wMCAyMC44Mkw0MS4wOSAyMC44Mkw0MS4wOSAyMlpNNDYuMDcgMjJMNDQuNTMgMjJMNDcuNzUgMTMuNDdMNDkuMDggMTMuNDdMNTIuMzEgMjJMNTAuNzYgMjJMNTAuMDYgMjAuMDFMNDYuNzYgMjAuMDFMNDYuMDcgMjJaTTQ4LjQxIDE1LjI4TDQ3LjE4IDE4LjgyTDQ5LjY1IDE4LjgyTDQ4LjQxIDE1LjI4Wk01Ny45NSAxNC42Nkw1NS4zMSAxNC42Nkw1NS4zMSAxMy40N0w2Mi4wOCAxMy40N0w2Mi4wOCAxNC42Nkw1OS40MiAxNC42Nkw1OS40MiAyMkw1Ny45NSAyMkw1Ny45NSAxNC42NlpNNzEuNDEgMjJMNjUuODMgMjJMNjUuODMgMTMuNDdMNzEuMzcgMTMuNDdMNzEuMzcgMTQuNjZMNjcuMzEgMTQuNjZMNjcuMzEgMTcuMDJMNzAuODIgMTcuMDJMNzAuODIgMTguMTlMNjcuMzEgMTguMTlMNjcuMzEgMjAuODJMNzEuNDEgMjAuODJMNzEuNDEgMjJaTTgyLjk3IDIyTDgxLjAwIDEzLjQ3TDgyLjQ3IDEzLjQ3TDgzLjc5IDE5Ljg4TDg1LjQyIDEzLjQ3TDg2LjY2IDEzLjQ3TDg4LjI3IDE5Ljg5TDg5LjU5IDEzLjQ3TDkxLjA2IDEzLjQ3TDg5LjA5IDIyTDg3LjY3IDIyTDg2LjA1IDE1Ljc3TDg0LjM5IDIyTDgyLjk3IDIyWk05Ni42OSAyMkw5NS4yMiAyMkw5NS4yMiAxMy40N0w5Ni42OSAxMy40N0w5Ni42OSAyMlpNMTAzLjE5IDE0LjY2TDEwMC41NSAxNC42NkwxMDAuNTUgMTMuNDdMMTA3LjMyIDEzLjQ3TDEwNy4zMiAxNC42NkwxMDQuNjYgMTQuNjZMMTA0LjY2IDIyTDEwMy4xOSAyMkwxMDMuMTkgMTQuNjZaTTExMi41NiAyMkwxMTEuMDcgMjJMMTExLjA3IDEzLjQ3TDExMi41NiAxMy40N0wxMTIuNTYgMTcuMDJMMTE2LjM3IDE3LjAyTDExNi4zNyAxMy40N0wxMTcuODUgMTMuNDdMMTE3Ljg1IDIyTDExNi4zNyAyMkwxMTYuMzcgMTguMjFMMTEyLjU2IDE4LjIxTDExMi41NiAyMloiIGZpbGw9IiNGRkZGRkYiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTQ4LjA2IDIyTDE0NC4wOSAyMkwxNDQuMDkgMTMuNjBMMTQ4LjA2IDEzLjYwUTE0OS40NCAxMy42MCAxNTAuNTEgMTQuMTJRMTUxLjU4IDE0LjYzIDE1Mi4xNyAxNS41OFExNTIuNzUgMTYuNTMgMTUyLjc1IDE3LjgwTDE1Mi43NSAxNy44MFExNTIuNzUgMTkuMDcgMTUyLjE3IDIwLjAyUTE1MS41OCAyMC45NyAxNTAuNTEgMjEuNDhRMTQ5LjQ0IDIyIDE0OC4wNiAyMkwxNDguMDYgMjJaTTE0Ni40NyAxNS41MEwxNDYuNDcgMjAuMTBMMTQ3Ljk3IDIwLjEwUTE0OS4wNCAyMC4xMCAxNDkuNzAgMTkuNDlRMTUwLjM1IDE4Ljg4IDE1MC4zNSAxNy44MEwxNTAuMzUgMTcuODBRMTUwLjM1IDE2LjcyIDE0OS43MCAxNi4xMVExNDkuMDQgMTUuNTAgMTQ3Ljk3IDE1LjUwTDE0Ny45NyAxNS41MEwxNDYuNDcgMTUuNTBaTTE1Ny4wNSAxNy44MEwxNTcuMDUgMTcuODBRMTU3LjA1IDE2LjU1IDE1Ny42NiAxNS41NVExNTguMjYgMTQuNTYgMTU5LjMzIDE0LjAwUTE2MC4zOSAxMy40MyAxNjEuNzIgMTMuNDNMMTYxLjcyIDEzLjQzUTE2My4wNSAxMy40MyAxNjQuMTEgMTQuMDBRMTY1LjE4IDE0LjU2IDE2NS43OCAxNS41NVExNjYuMzkgMTYuNTUgMTY2LjM5IDE3LjgwTDE2Ni4zOSAxNy44MFExNjYuMzkgMTkuMDUgMTY1Ljc4IDIwLjA0UTE2NS4xOCAyMS4wNCAxNjQuMTIgMjEuNjBRMTYzLjA1IDIyLjE3IDE2MS43MiAyMi4xN0wxNjEuNzIgMjIuMTdRMTYwLjM5IDIyLjE3IDE1OS4zMyAyMS42MFExNTguMjYgMjEuMDQgMTU3LjY2IDIwLjA0UTE1Ny4wNSAxOS4wNSAxNTcuMDUgMTcuODBaTTE1OS40NSAxNy44MEwxNTkuNDUgMTcuODBRMTU5LjQ1IDE4LjUxIDE1OS43NSAxOS4wNVExNjAuMDUgMTkuNjAgMTYwLjU3IDE5LjkwUTE2MS4wOSAyMC4yMCAxNjEuNzIgMjAuMjBMMTYxLjcyIDIwLjIwUTE2Mi4zNiAyMC4yMCAxNjIuODcgMTkuOTBRMTYzLjM5IDE5LjYwIDE2My42OSAxOS4wNVExNjMuOTkgMTguNTEgMTYzLjk5IDE3LjgwTDE2My45OSAxNy44MFExNjMuOTkgMTcuMDkgMTYzLjY5IDE2LjU0UTE2My4zOSAxNiAxNjIuODcgMTUuNzBRMTYyLjM2IDE1LjQwIDE2MS43MiAxNS40MEwxNjEuNzIgMTUuNDBRMTYxLjA4IDE1LjQwIDE2MC41NyAxNS43MFExNjAuMDUgMTYgMTU5Ljc1IDE2LjU0UTE1OS40NSAxNy4wOSAxNTkuNDUgMTcuODBaTTE3MC42OSAxNy44MEwxNzAuNjkgMTcuODBRMTcwLjY5IDE2LjU0IDE3MS4yOSAxNS41NFExNzEuODggMTQuNTUgMTcyLjk0IDEzLjk5UTE3My45OSAxMy40MyAxNzUuMzEgMTMuNDNMMTc1LjMxIDEzLjQzUTE3Ni40NiAxMy40MyAxNzcuMzggMTMuODRRMTc4LjMxIDE0LjI1IDE3OC45MiAxNS4wMkwxNzguOTIgMTUuMDJMMTc3LjQxIDE2LjM5UTE3Ni42MCAxNS40MCAxNzUuNDMgMTUuNDBMMTc1LjQzIDE1LjQwUTE3NC43NCAxNS40MCAxNzQuMjEgMTUuNzBRMTczLjY4IDE2IDE3My4zOCAxNi41NFExNzMuMDkgMTcuMDkgMTczLjA5IDE3LjgwTDE3My4wOSAxNy44MFExNzMuMDkgMTguNTEgMTczLjM4IDE5LjA1UTE3My42OCAxOS42MCAxNzQuMjEgMTkuOTBRMTc0Ljc0IDIwLjIwIDE3NS40MyAyMC4yMEwxNzUuNDMgMjAuMjBRMTc2LjYwIDIwLjIwIDE3Ny40MSAxOS4yMkwxNzcuNDEgMTkuMjJMMTc4LjkyIDIwLjU4UTE3OC4zMSAyMS4zNSAxNzcuMzkgMjEuNzZRMTc2LjQ2IDIyLjE3IDE3NS4zMSAyMi4xN0wxNzUuMzEgMjIuMTdRMTczLjk5IDIyLjE3IDE3Mi45NCAyMS42MVExNzEuODggMjEuMDUgMTcxLjI5IDIwLjA1UTE3MC42OSAxOS4wNiAxNzAuNjkgMTcuODBaTTE4NS44MSAyMkwxODMuNDYgMjJMMTgzLjQ2IDEzLjYwTDE4NS44MSAxMy42MEwxODUuODEgMTcuMDlMMTg5LjA2IDEzLjYwTDE5MS42OCAxMy42MEwxODguMjUgMTcuMzJMMTkxLjg2IDIyTDE4OS4xMCAyMkwxODYuNzAgMTguOTVMMTg1LjgxIDE5LjkwTDE4NS44MSAyMlpNMjAyLjcxIDIyTDE5NS45NyAyMkwxOTUuOTcgMTMuNjBMMjAyLjU2IDEzLjYwTDIwMi41NiAxNS40NEwxOTguMzIgMTUuNDRMMTk4LjMyIDE2Ljg1TDIwMi4wNSAxNi44NUwyMDIuMDUgMTguNjNMMTk4LjMyIDE4LjYzTDE5OC4zMiAyMC4xN0wyMDIuNzEgMjAuMTdMMjAyLjcxIDIyWk0yMDkuODkgMjJMMjA3LjUyIDIyTDIwNy41MiAxMy42MEwyMTEuMzYgMTMuNjBRMjEyLjUwIDEzLjYwIDIxMy4zNCAxMy45OFEyMTQuMTggMTQuMzUgMjE0LjYzIDE1LjA2UTIxNS4wOSAxNS43NiAyMTUuMDkgMTYuNzFMMjE1LjA5IDE2LjcxUTIxNS4wOSAxNy42MiAyMTQuNjYgMTguMzBRMjE0LjI0IDE4Ljk4IDIxMy40NSAxOS4zNkwyMTMuNDUgMTkuMzZMMjE1LjI2IDIyTDIxMi43MSAyMkwyMTEuMTkgMTkuNzdMMjA5Ljg5IDE5Ljc3TDIwOS44OSAyMlpNMjA5Ljg5IDE1LjQ3TDIwOS44OSAxNy45M0wyMTEuMjEgMTcuOTNRMjExLjk1IDE3LjkzIDIxMi4zMiAxNy42MVEyMTIuNjkgMTcuMjkgMjEyLjY5IDE2LjcxTDIxMi42OSAxNi43MVEyMTIuNjkgMTYuMTIgMjEyLjMyIDE1Ljc5UTIxMS45NSAxNS40NyAyMTEuMjEgMTUuNDdMMjExLjIxIDE1LjQ3TDIwOS44OSAxNS40N1oiIGZpbGw9IiMwMDAwMDAiIHg9IjE0Mi44OTk5OTk5OTk5OTk5OCIvPjwvc3ZnPg==)](https://forthebadge.com)
 
-# <h1 align=center>**`Data Engineering`**</h1>
+[![PyPI version](https://badge.fury.io/py/pandas.svg)](https://badge.fury.io/py/pandas)
+[![PyPI version](https://badge.fury.io/py/fastapi.svg)](https://badge.fury.io/py/fastapi)
 
-<p align="center">
-<img src="https://files.realpython.com/media/What-is-Data-Engineering_Watermarked.607e761a3c0e.jpg"  height=300>
-</p>
+Hi, I want to share with you my first Data engineering project in Henry BootCamp.
 
-¡Bienvenidos al primer proyecto individual de la etapa de labs! En esta ocasión, deberán hacer un trabajo situándose en el rol de un ***Data Engineer***.  
+# Proposal:
 
-<hr>  
+  * Process the diferents datasets to a pandas DataFrame.
 
-## **Introducción**
+  * The realization of an EDA, to know the structure and particularities of the data.
 
-La idea de este proyecto es que el alumno logre internalizar los conocimientos requeridos para la elaboración y ejecución de una API.
+  * Start with an ETL process to clean the data in python.
 
-`Application Programming Interface` es una interfaz que permite que dos aplicaciones se comuniquen entre sí, independientemente de la infraestructura subyacente. Son herramientas muy versátiles y fundamentales para la creación de, por ejemplo, pipelines, ya que permiten mover y brindar acceso simple a los datos que se quieran disponibilizar a través de los diferentes endpoints, o puntos de salida de la API.
+  * Export the cleaned data to a .csv
 
-Hoy en día contamos con **FastAPI**, un web framework moderno y de alto rendimiento para construir APIs con Python.
-<p align=center>
-<img src = 'https://i.ibb.co/9t3dD7D/blog-zenvia-imagens-3.png' height=250><p>
+  * Creating an API for data consumption using FastAPI.
 
-## **Propuesta de trabajo**
+  * Create a docker image of the API for future deployment.
 
-El proyecto consiste en realizar una ingesta de datos desde diversas fuentes, posteriormente aplicar las transformaciones que consideren pertinentes, y luego disponibilizar los datos limpios para su consulta a través de una API. Esta API deberán construirla en un entorno virtual dockerizado.
+  * Deploy the API in Mogenius service.
 
-Los datos serán provistos en archivos de diferentes extensiones, como *csv* o *json*. Se espera que realicen un EDA para cada dataset y corrijan los tipos de datos, valores nulos y duplicados, entre otras tareas. Posteriormente, tendrán que relacionar los datasets así pueden acceder a su información por medio de consultas a la API.
+# Data pipeline:
+![Image](src\pipeline.png)
 
-Las consultas a realizar son:
+# Datasets
 
-+ Máxima duración según tipo de film (película/serie), por plataforma y por año:
-    El request debe ser: get_max_duration(año, plataforma, [min o season])
+  The project was based in four datasets of diferents streaming platforms:
 
-+ Cantidad de películas y series (separado) por plataforma
-    El request debe ser: get_count_plataform(plataforma)  
+    * Amazon -> in CSV format.
+    * Netflix -> in JSON format.
+    * Disney -> in CSV format.
+    * Hulu -> in CSV format.
+
+# EDA
+
+I divided the exploratory analysis into two parts:
+* Estructure Investigation:
   
-+ Cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo.
-    El request debe ser: get_listedin('genero')  
-    Como ejemplo de género pueden usar 'comedy', el cuál deberia devolverles un cunt de 2099 para la plataforma de amazon.
+    Here i want to kwon about the structure of the datasets, shape, datatypes, null values, amount of rows and columns.
 
-+ Actor que más se repite según plataforma y año.
-  El request debe ser: get_actor(plataforma, año)
+![Image](src\Estructure_investigation.png)
 
-## **Pasos del proyecto**
+* Feature Investigation:
 
-1. Ingesta y normalización de datos
+  Here i take a look to the quality of the data. Duplicate valus, null values, relevances of columns, etc.
 
-2. Relacionar el conjunto de datos y crear la tabla necesaria para realizar consultas. Aquí se recomienda corroborar qué datos necesitarán en base a las consultas a realizar y concatenar las 4 tablas
+  Graph for see null values per column.
+  ![Image](src\feature_investigation.png)
 
-3. Leer documentación en links provistos e indagar sobre Uvicorn, FastAPI y Docker
+# ETL
 
-4. Crear la API en un entorno Docker → leer documentación en links provistos
+  During the ETL process I ran into endless errors, from null values, inconsistencies, unnecessary columns, etc. I was able to fill in empty fields using data from other datasets, review the inconsistencies and eliminate those columns that did not contribute anything to generate information.
 
-5. Realizar consultas solicitadas
+  ![Image](src/ETL.png)
 
-6. Realizar un video demostrativo
+  To finish this work i export the cleaned data to csv files, divided in movies and tv shows:
 
-7. **PLUS**: realizar un deployment en Mogenius 
+  ![image](src/cleaned_data.png)
 
-<p align=center>
-<img src = 'https://i.postimg.cc/2SwvnTcw/Sin-t-tulo.png' height = 400></p>
+# API
 
-## **Criterios de evaluación**
+I used the FastAPI framework to make a REST API that consumes the clean data to perform queries.
 
-**`Código`**:
+The main queries are:
 
-+ Prolijidad de código 
+Maximum duration according to type of film (film/series), by platform and by year.
 
-+ Uso de clases y/o funciones, en caso de ser necesario
+Number of movies and series by platform
 
-+ Código comentado
+Number of times a genre is repeated and the platform with the highest frequency.
 
-**`Repositorio`**:
+Actor who is most repeated according to platform and year.
 
-+ Nombres de archivo adecuados
+![Image](src/API.png)
 
-+ Uso de carpetas para ordenar los archivos
+# Docker
 
-+ README.md presentando el proyecto y el trabajo realizado
+After coding the API, I need to store this and its dependencies in a container for easier deployment on any platform, so I make a docker image of my API with a Dockerfile.
 
-**`Cumplimiento de consigna`**:
-
-+ Ejecución de consultas a la API
-+ Opcional: cumplimiento de plus
-
-## **Video demostrativo**
-
-Tendrán que realizar un video presentando su trabajo y ejecutando las tareas solicitadas. **No deberá superar los 5 minutos**. Debe incluir una breve presentación personal, del proyecto, ejecución de código y tareas solicitadas.
-
-Para presentarlo, deben entregar el link de acceso al video. Pueden alojarlo en YouTube, Drive o cualquier plataforma de almacenamiento. **Verificar que sea de acceso público**.
-
-## **Checklist**
-
-A modo de ayuda, dejamos algunos ítems para que puedan corroborar que su trabajo cumple con los requerimientos solicitados:
-
-+ ¿Creaste funciones para tareas que puedan ser necesarias repetir en tu código?
-
-+ ¿Comentaste tu código para que alguien más entienda qué hiciste o por qué, en cada bloque?
-
-+ ¿Realizaste una limpieza adecuada de los datos?
-
-+ ¿Levantaste un entorno containerized Docker con FastAPI?
-
-+ ¿Se pueden realizar consultas a tu API?
-
-+ ¿Tu repositorio tiene un README presentando el proyecto y el trabajo que hiciste para desarrollarlo?
-
-+ ¿Los archivos, dentro de tu repositorio, están nombrados acorde a su contenido y organizados en carpetas?
-
-+ ¿Hiciste un video demostrativo? ¿Incluye una presentación personal y del proyecto? ¿Hay una explicación del paso a paso?
+![Image](src/dockerfile.png)
 
 
-## **Conceptos de interés**
+![Image](src/container.png)
 
-- **`Docker`** es una solución completa para la producción, distribución y uso de containers.  
-&nbsp;- **`Container`** es una abstracción de la capa de software que permite *empaquetar* código, con librerías y dependencias en un entorno parcialmente aislado.  
-&nbsp;- **`Image`** es un ejecutable Docker que tiene todo lo necesario para correr aplicaciones, lo que incluye un archivo de configuración, variables -de entorno y runtime- y librerías.  
-&nbsp;- **`Dockerfile`** archivo de texto con instrucciones para construir una imagen. Puede considerarse la automatización de creación de imágenes.  
-- **`Deployment`** es el conjunto de actividades, infraestructura y recursos que posibilitan el uso de software. En este caso, la plataforma Mogenius les permitirá *montar* su imagen de Docker con la API en sus servidores para acceder a ella a través de internet.
+# Deployment
 
-## **Recursos y links provistos**
+When I finished the MVP project I implemented it in mogenius.
 
-Imagen Docker con Uvicorn/Guinicorn para aplicaciones web de alta performance:
+![Image](src/mogenius.png)
 
-+ https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/ 
+# Used Technologies:
 
-+ https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
+>Jupiter Notebooks, Python, Docker, Mogenius.
 
-Mogenius Deployment
+>Libs: Pandas, Numpy, Colections, FastAPI framework, MatPlotlib.
 
-+ https://mogenius.com/home  
+# API Usage Example
 
-FAST API Documentation:
+## Using Docker:
 
-+ https://fastapi.tiangolo.com/tutorial/
-
-
-## **Fuente de datos**
-
-+ Podrán encontrar los archivos con datos en la carpeta Datasets, en este mismo repositorio.<sup>*</sup>
-
-> <sub> <sup>*</sup>`Si quieren practicar un poco más, pueden investigar sobre la librería REQUESTS para descargar archivos desde links. Otra alternativa es usar el manejo nativo de Pandas para leer archivos directamente desde links`
-
-## **Deadline**
-
-Se les disponibilizará, a su debido tiempo, un form por el canal de Slack para que carguen sus links del repositorio de GitHub.  
-La fecha límite para la entrega es el día **viernes 9 de diciembre a las 12:00 GMT-3**.   
-  
-<p align=center>
-<img src = 'https://cdn.memegenerator.es/imagenes/memes/full/0/90/902781.jpg' height = 300></p>
+* Clone my repo in [![https://github.com/JaraEsequiel/PI01_DATA05]](https://github.com/JaraEsequiel/PI01_DATA05)
